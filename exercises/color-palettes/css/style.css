@@ -2,21 +2,77 @@
     text-align: center;
     font-family: cursive;
 }
+
 #style-1-block-1 {
     text-align: center;
     font-family: cursive;
     padding: 24px;
     background-color: #400000;
 }
+
 #style-1-block-2 {
     text-align: center;
     font-family: cursive;
     padding: 24px;
     background-color: #811e73;
+
 }
+
 #style-1-block-3 {
     text-align: center;
     font-family: cursive;
     padding: 24px;
     background-color: #6350c5;
+}
+
+#style-2-heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#style-2-block-2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    background-color: #152636;
+}
+
+#style-2-block-3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    background-color: #044553
+}
+
+#style-2-block-4 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    background-color: #259faf
+}
+#style-3-heading {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#style-3-block-1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 24px;
+    background-color: #4e0522;
+}
+
+#style-3-block-2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 24px;
+    background-color: #dd4e24;
+
+}
+
+#style-3-block-3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 24px;
+    background-color: #fad97a;
 }
