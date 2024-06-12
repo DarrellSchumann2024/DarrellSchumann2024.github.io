@@ -1,0 +1,12 @@
+.narrow {
+    width: 200px;
+    display: inline-block;
+}
+
+.blue {
+    background-color: skyblue;
+}
+
+.orange {
+    background-color: salmon;
+}
