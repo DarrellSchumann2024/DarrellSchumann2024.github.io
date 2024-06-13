@@ -1,0 +1,15 @@
+div {
+    border: 10px dashed red;
+    margin: 24px 0px;
+    padding: 24px 36px;
+    background-color: lightcoral;
+}
+
+p {
+    border: 20px solid rebeccapurple;
+    margin: 60px;
+    margin-bottom: 300px;
+    padding: 48px 60px;
+    background-color: magenta;
+    border-radius: 50%;
+}

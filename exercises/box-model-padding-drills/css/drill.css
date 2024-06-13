@@ -1,0 +1,43 @@
+/* Drill 1 - Write your code solution below */
+#d1-container-1 {
+    background-color: salmon;
+    margin: 26px 0px;
+    padding: 36px;
+    width: 550px;
+}
+
+/* Drill 2 - Write your code solution below */
+#d2-container-1 {
+    background-color: salmon;
+    border: 5px solid purple;
+    border-radius: 5px;
+    padding: 24px 38px 48px;
+}
+
+/* Drill 3 - Write your code solution below */
+#d3-div-1,
+#d3-div-3 {
+    padding: 12px;
+}
+#d3-div-2 {
+    padding: 12px 48px;
+}
+
+/* Drill 4 - Write your code solution below */
+#d4-container-1 {
+    padding: 24px;
+}
+
+#d4-div-1 {
+    padding-bottom: 24px;
+}
+
+/* Drill 5 - Write your code solution below */
+.d5-container {
+    padding: 25px;
+    text-align: center;
+}
+.d5-s {
+    padding: 25px;
+    display: inline-block;
+}
