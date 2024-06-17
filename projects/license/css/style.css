@@ -59,4 +59,7 @@
 #real-id {
     display: inline-block; 
 }
-
+#signature {
+    font-family: Ms Madi;
+    font-weight: bold;
+}
