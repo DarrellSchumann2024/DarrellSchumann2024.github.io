@@ -8,21 +8,52 @@
 */
 #license {
     width: 700px;
-    border: 5px solid black;
-    border-radius: 5px;
+    border: 3px solid black;
+    border-radius: 15px;
     padding: 24px;
 }
 
 #left-side {
     display: inline-block;
-    width: 65;
+    width: 65%;
+}
+
+#right-side {
+    display: inline-block;
+    width: 34%
 }
 
 #right-side img {
-    width: 1%
+    width: 100%
 }
 
+#id-and-expiration div {
+    display: inline-block;
 
-#id-and-expiration {
+}
+
+#small-pic-container {
+    display: inline-block;
+
+}
+
+#data-fields {
     display: inline-block;
 }
+#data-left {
+    display: inline-block;
+}
+#data-right {
+    display: inline-block;
+}
+
+#signature {
+    text-align: center;
+}
+#donor {
+    display: inline-block;
+}
+#real-id {
+    display: inline-block; 
+}
+
