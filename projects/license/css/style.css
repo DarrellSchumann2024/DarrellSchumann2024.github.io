@@ -17,6 +17,9 @@
     display: inline-block;
     width: 65%;
 }
+#left-side img {
+    opacity: 50%;
+}
 
 #right-side {
     display: inline-block;
