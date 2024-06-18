@@ -11,23 +11,25 @@
     border: 3px solid black;
     border-radius: 15px;
     padding: 24px;
+    background-color: gold;
 }
 
 #left-side {
     display: inline-block;
     width: 65%;
 }
+
 #left-side img {
     opacity: 50%;
 }
 
 #right-side {
     display: inline-block;
-    width: 34%
+    width: 34%;
 }
 
 #right-side img {
-    width: 100%
+    width: 100%;
 }
 
 #id-and-expiration div {
@@ -35,17 +37,16 @@
 
 }
 
-#small-pic-container {
-    display: inline-block;
-
-}
-
+#small-pic-container,
 #data-fields {
     display: inline-block;
 }
-#data-left {
-    display: inline-block;
+
+#small-pic-container img {
+    width: 80px;
 }
+
+#data-left,
 #data-right {
     display: inline-block;
 }
@@ -53,12 +54,16 @@
 #signature {
     text-align: center;
 }
-#donor {
+
+#right-side img {
+    width: 100%;
+}
+
+#donor,
+#real-id {
     display: inline-block;
 }
-#real-id {
-    display: inline-block; 
-}
+
 #signature {
     font-family: Ms Madi;
     font-weight: bold;
