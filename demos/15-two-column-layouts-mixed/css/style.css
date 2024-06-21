@@ -76,13 +76,9 @@ body {
     margin-bottom: 24px;
 }
 
-.metube-item .thumbnail-placeholder {
-    background: radial-gradient(
-        at top left,
-        crimson, 
-        orange
-    );
+.metube-item img {
     aspect-ratio: 16 / 9;
+    width: 100%;
     border-radius: 8px;
 }
 
