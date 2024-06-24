@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color:rgb(22, 22, 22)
 }
 
 #grid-layout {
@@ -31,44 +32,41 @@ body {
     flex-wrap: wrap;
 }
 
-/* Header Styles */
 #header a {
     text-decoration: none;
 }
 
 #header #me {
-    color: #111111;
+    color: #ffff00;
 }
 
 #header #tube {
     background-color: red;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 4px;
     border-radius: 12px;
 }
 
-/* Sidebar Styles */
 
 #sidebar ul {
     margin: 0px;
     padding: 12px 0px;
     list-style-type: none;
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
 }
 
 #sidebar ul a {
     text-decoration: none;
-    color: #111111;
+    color: #0dff00;
     padding: 12px;
     display: block;
 }
 
 #sidebar ul a:hover {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     border-radius: 12px;
 }
 
-/* MeTube Items Styles */
 
 .metube-item {
     width: 250px;
@@ -88,7 +86,7 @@ body {
 
 .metube-item h4 a {
     text-decoration: none;
-    color: #111111;
+    color: #ffffff;
     display: block;
 }
 
@@ -103,4 +101,12 @@ body {
 
 .metube-item .video-channel {
     margin-bottom: 4px;
+}
+
+.video-channel {
+    color: #FF0000;
+}
+
+.video-details {
+    color: #ffff00;
 }
