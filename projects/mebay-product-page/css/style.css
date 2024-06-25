@@ -146,4 +146,27 @@ Horizontally center buttons */
     display: flex;
     flex-direction: column;
 }
-.
+
+.cta-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add spacing between buttons */
+    margin: 10px 0; /* Adjust values as needed */
+}
+
+.cta-button2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add spacing between buttons */
+    margin: 10px 0; /* Adjust values as needed */
+}
+
+.cta-button3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add spacing between buttons */
+    margin: 10px 0; /* Adjust values as needed */
+}
