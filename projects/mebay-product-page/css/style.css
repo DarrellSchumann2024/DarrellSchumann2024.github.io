@@ -151,22 +151,21 @@ Horizontally center buttons */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Add spacing between buttons */
-    margin: 10px 0; /* Adjust values as needed */
+    margin: 10px 0;
 }
 
 .cta-button2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Add spacing between buttons */
-    margin: 10px 0; /* Adjust values as needed */
+    margin: 10px 0;
 }
 
 .cta-button3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Add spacing between buttons */
-    margin: 10px 0; /* Adjust values as needed */
+    margin: 10px 0;
 }
+
+n/a
