@@ -1,0 +1,117 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+.card-style-2 {
+    background-color: white;
+    border-radius: 2%;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.animagram-header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.animagram-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-style-3 h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+.card-style-3 p {
+    margin: 24px;
+}
+.card-style-3 img {
+    width: 100%;
+    border-radius: 50%;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    object-fit: cover;
+}
+
+.card-style-3 {
+    background-color: white;
+    border-radius: 2%;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.animagram-header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.animagram-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-style-3 h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+.card-style-3 p {
+    margin: 24px;
+}
+.card-style-3 img {
+    width: 100%;
+    border-radius: 50%;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    object-fit: cover;
+}
+
+.card-style-4 {
+    background-color: white;
+    border-radius: 2%;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.animagram-header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.animagram-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-style-4 h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+.card-style-4 p {
+    margin: 24px;
+}
+.card-style-4 img {
+    width: 100%;
+    border-radius: 50%;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    object-fit: cover;
+}
