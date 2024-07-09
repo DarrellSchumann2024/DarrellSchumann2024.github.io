@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Montaga&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: 
+        linear-gradient(#DDDDDD66, #DDDDDD66),
+        url("../images/granite.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Fallback font */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/**************************************************************
+    Grid setup and grid area assignments
+**************************************************************/
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "top-left-acc header  header  header  top-right-acc"
+        "left-accent  navbar  navbar  navbar  right-accent"
+        "left-accent  banner  banner  banner  right-accent"
+        "left-accent  card-1  card-2  card-3  right-accent"
+        "left-accent  aside   blog    blog    right-accent"
+        ".            footer  footer  footer  ."
+        ".            bottom  bottom  bottom  .";
+    gap: 20px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Grid areas */
+#top-left-accent { grid-area: top-left-acc; }
+#top-right-accent { grid-area: top-right-acc; }
+#header { grid-area: header; }
+#nav { grid-area: navbar; }
+#left-accent { grid-area: left-accent; }
+#right-accent { grid-area: right-accent; }
+#banner-container { grid-area: banner; }
+#card-1 { grid-area: card-1; }
+#card-2 { grid-area: card-2; }
+#card-3 { grid-area: card-3; }
+#aside { grid-area: aside; }
+#main { grid-area: blog; }
+#footer { grid-area: footer; }
+#bottom { grid-area: bottom; }
+
+/**************************************************************
+    Accent Border Styling
+**************************************************************/
+
+#top-left-accent {
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-image: radial-gradient(ellipse 100px 250% at bottom right, #666666EE, #66666600 50%) 1;
+}
+
+#top-right-accent {
+    border-width: 0px 0px 2px 2px;
+    border-style: solid;
+    border-image: radial-gradient(ellipse 100px 250% at bottom left, #666666EE, #66666600 50%) 1;
+}
+
+#left-accent {
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #666666EE, #66666600 50%) 1;
+}
+
+#right-accent {
+    border-width: 0px 0px 0px 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #666666EE, #66666600 50%) 1;
+}
+
+/**************************************************************
+    Header Styling
+**************************************************************/
+#header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #66666611, #666666EE) 1;
+    padding: 12px;
+}
+
+#header h1 {
+    color: #1c4268;
+    text-shadow: 0px 8px 8px #33333399;
+    font-family: 'Cormorant', serif;
+    font-size: 36px; /* Adjusted for mobile */
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+#social-section {
+    text-align: right;
+}
+
+#social-section a {
+    text-decoration: none;
+}
+
+#search-bar {
+    background-color: #d4d4d4;
+    border: 0;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    width: 120px; /* Adjusted for mobile */
+    height: 24px;
+    margin-top: 8px; /* Adjusted for mobile */
+}
+
+#search-button {
+    cursor: pointer;
+    background-color: #253b57;
+    color: white;
+    border: 1px solid #111111;
+    height: 24px;
+    padding: 0 12px; /* Adjusted for mobile */
+}
+
+#shield-image:hover img {
+    cursor: pointer;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/**************************************************************
+    Navbar Styling
+**************************************************************/
+#nav {
+    background: radial-gradient(ellipse 150% 80%, #FFFFFF99 30%, #FFFFFF00 80%);
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montaga', serif;
+    padding: 8px 16px; /* Adjusted for mobile */
+    text-align: center;
+}
+
+#nav a:hover {
+    background: linear-gradient(#f9f9f9, #e5e5e5);
+}
+
+/**************************************************************
+    General Border/Background Styling
+**************************************************************/
+#banner-container img,
+#card-1 img,
+#card-2 img,
+#card-3 img,
+#more-appearances-container,
+#next-publication-container,
+.ad-container {
+    border: 3px solid #AAAAAA;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+#blog {
+    border: 3px solid #333333;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+#banner-container,
+#card-1,
+#card-2,
+#card-3,
+#aside,
+#main {
+    background-color: #00000077;
+}
+
+/**************************************************************
+    Banner and Cards Styling
+**************************************************************/
+#banner-container {
+    margin: 0 12px;
+    padding: 8px;
+}
+
+#banner-container img {
+    width: 100%;
+}
+
+#card-1,
+#card-2,
+#card-3 {
+    padding: 8px;
+}
+
+#card-1 img,
+#card-2 img,
+#card-3 img {
+    width: 100%;
+}
+
+#card-1 {
+    margin-left: 12px;
+}
+
+#card-3 {
+    margin-right: 12px;
+}
+
+/**************************************************************
+    Sidebar (Aside) Styling
+**************************************************************/
+#aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    padding: 8px;
+}
+
+#more-appearances-container {
+    background-image: url("../images/events-bg.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: black;
+    padding: 24px;
+}
+
+#next-publication-container {
+    background-image: url("../images/releases-bg.jpg");
+    background-size: cover;
+    padding: 24px;
+}
+
+#more-appearances-container h3,
+#next-publication-container h3 {
+    color: white;
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.side-by-side {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.side-by-side img,
+.ad-container img {
+    width: 100%;
+}
+
+.side-by-side .image-container {
+    flex: 2;
+}
+
+.side-by-side .text-container {
+    flex: 5;
+    padding-left: 24px;
+}
+
+.yellow {
+    color: #dbbf73;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: #a1a1a1;
+}
+
+.blue {
+    color: #92add1;
+}
+
+.montaga {
+    font-family: 'Montaga', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+/**************************************************************
+    Blog (Main) Styling
+**************************************************************/
+#main {
+    margin-right: 12px;
+    padding: 8px;
+}
+
+#blog {
+    background-color: lightgray;
+    padding: 24px;
+}
+
+#main h2 {
+    font-family: 'Cormorant', serif;
+    font-size: 24px; /* Adjusted for mobile */
+    margin: 12px 0;
+    text-shadow: 0px 4px 4px rgba(
+
+0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+#main h2 .caps {
+    font-size: 28px; /* Adjusted for mobile */
+}
+
+#main h3 {
+    font-family: 'Montaga', serif;
+    margin: 20px 0;
+}
+
+#main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px; /* Adjusted for mobile */
+}
+
+#main h3 a,
+#main p a {
+    color: #1c4268;
+}
+
+#main h3 a {
+    text-decoration: none;
+}
+
+#blog-button-container {
+    margin: 24px 0;
+}
+
+/**************************************************************
+    Footer/Bottom Styling
+**************************************************************/
+#footer {
+    background: radial-gradient(ellipse 50% 80% at bottom center, #00000033, #00000000);
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #66666611, #333333EE, #66666611) 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 12px;
+}
+
+#bottom {
+    background: url("../images/bottom.png");
+    background-size: 90%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100px;
+    opacity: 0.75;
+}
+
+/**************************************************************
+    Media Queries Styling
+**************************************************************/
+@media screen and (max-width: 1000px) {
+    /* Adjust grid layout for tablets and smaller desktops */
+    #grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "top-left-acc"
+            "header"
+            "navbar"
+            "banner"
+            "card-1"
+            "card-2"
+            "card-3"
+            "aside"
+            "blog"
+            "footer"
+            "bottom";
+    }
+    
+    #header h1 {
+        font-size: 48px; /* Adjust header size for tablets */
+        line-height: 1.4;
+    }
+
+    #search-bar {
+        width: 100%; /* Full width search bar */
+        margin-top: 10px;
+    }
+
+    #search-button {
+        width: 100%; /* Full width search button */
+        margin-top: 10px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav a {
+        padding: 8px 0;
+    }
+
+    #banner-container {
+        margin: 0;
+    }
+
+    #card-1,
+    #card-2,
+    #card-3 {
+        margin: 0;
+    }
+
+    #aside {
+        margin: 0;
+    }
+
+    #main {
+        margin: 0;
+    }
+
+    #footer {
+        font-size: 10px; /* Smaller font size for footer */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust grid layout for mobile phones */
+    #grid-layout {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "banner"
+            "card-1"
+            "card-2"
+            "card-3"
+            "aside"
+            "blog"
+            "footer"
+            "bottom";
+        padding: 5px;
+    }
+
+    #header h1 {
+        font-size: 36px; /* Further adjust header size for small screens */
+        line-height: 1.2;
+    }
+
+    #nav a {
+        padding: 6px 0;
+    }
+
+    #search-bar {
+        width: 100%; /* Full width search bar */
+        margin-top: 8px;
+    }
+
+    #search-button {
+        width: 100%; /* Full width search button */
+        margin-top: 8px;
+    }
+
+    #banner-container,
+    #card-1,
+    #card-2,
+    #card-3 {
+        margin: 0;
+    }
+
+    #aside {
+        margin: 0;
+    }
+
+    #main {
+        margin: 0;
+    }
+
+    #footer {
+        font-size: 9px; /* Smaller font size for footer on mobile */
+    }
+}

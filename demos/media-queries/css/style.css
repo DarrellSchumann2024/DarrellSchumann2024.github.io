@@ -106,45 +106,7 @@ body {
     padding: 20px;
 }
 
-/*
-    That pretty much wraps things up!
-
-    We now know how to convert a navbar, a Media
-    & Text layout, and a grid layout to be more
-    responsive, most of the time by taking
-    advantage of functionality offered by Flexbox
-    and CSS Grid.
-
-    For Flexbox, most of the time you can simply
-    change the flex-direction from 'row' to 'column',
-    or set flex-wrap to wrap; which approach is
-    better will often depend on your design and content.
-
-    For CSS Grid, you can reduce the number of columns,
-    and if you're using grid-areas, you can redistribute
-    those areas into the smaller columns.
-
-    And of course, decreasing font sizes and spacing
-    often helps to make a page more responsive as well.
-
-    Before we leave this demo though, there's one thing
-    we left in that we should probably take out: the
-    blue and red background in our media queries!
-
-    They were handy for visually telling us when we 
-    moved into different breakpoints, but we probably
-    don't want them on our actual completed site.
-*/
-
 @media screen and (max-width: 768px) and (min-width: 481px) {
-    /*
-        We can either delete this CSS rule, or just
-        comment it out, in case we want to use it again
-        for debugging this page in the future.
-    */
-    /* body {
-        background-color: skyblue;
-    } */
 
     .content-container h1 {
         font-size: 32px;
@@ -161,25 +123,20 @@ body {
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "txt1 img1"
-            "img2 img2"
-            "img3 img3"
-            "img4 txt2";
+            "txt1" 
+            "img1"
+            "img2" 
+            "img2"
+            "img3" 
+            "img3"
+            "img4" 
+            "txt2";
     }
 }
 
 @media screen and (max-width: 480px) {
-    /*
-        Same for this CSS rule as in the 
-        tablet breakpoint.  And with that,
-        we're finally done with the demo!
-    */
-    /* body {
-        background-color: firebrick;
-    } */
 
     #nav {
-        /* flex-wrap: wrap; */
 
         flex-direction: column;
         align-items: center;
