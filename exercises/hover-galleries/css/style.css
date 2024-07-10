@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+#cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card-label {
+    display: block;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-content {
+    display: none;
+    padding: 15px;
+}
+
+.card-content .gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.card-content .gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-content .gallery img:hover {
+    transform: scale(1.1);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .card-content {
+    display: block;
+}
