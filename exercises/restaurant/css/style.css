@@ -1,13 +1,15 @@
+/* Base styles */
 body {
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #ffaa68;
-  color: #663333;
+  background-color: #ffaa68; /* Light orange background */
+  color: #663333; /* Dark red text color */
 }
 
+/* Header */
 .header {
-  background-color: #ffd998; 
+  background-color: #ffd998; /* Lighter orange for header */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
   display: flex;
@@ -17,9 +19,8 @@ body {
 
 .container {
   max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto; /* Center content horizontally */
+  display: flex; /* Allow other sections to fit alongside */
 }
 
 .logo {
@@ -35,14 +36,8 @@ body {
 }
 
 .navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li {
-  display: inline-block;
-  margin-right: 20px;
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
 }
 
 .navigation a {
