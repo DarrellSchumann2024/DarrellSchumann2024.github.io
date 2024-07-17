@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url("../images/Football\ Field\ Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: inherit;
+  }
+  
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0));
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), transparent);
+  }
+
+  #navbar,
+  #footer {
+    background-color: #0B3D91;
+    padding: 10px 0;
+  }
+  
+  #navbar a,
+  #footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #C8102E;
+    transition: background-color 0.3s ease;
+  }
+  
+  #navbar a:hover,
+  #footer a:hover {
+    background-color: #A10C22;
+  }
+
+  #navbar-column,
+  #footer-column {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .header,
+  .subheader {
+    margin: 20px 0;
+    color: #0B3D91;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .left-column,
+  .right-column {
+    width: 40%;
+    padding: 20px;
+    color: #0B3D91;
+    text-align: center;
+  }
+  
+  .left-column img,
+  .right-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .vs {
+    width: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #C8102E;
+  }  
