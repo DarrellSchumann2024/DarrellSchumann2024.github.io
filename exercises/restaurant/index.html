@@ -3,68 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wrap It Up!</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Restaurant Name</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+
+  <header>
     <div class="container">
-      <a href="#" class="logo">
-        <img src="images/Wrap It Up.png" alt="Wrap It Up! Logo">
-      </a>
-      <nav class="navigation">
+      <div class="logo">
+        <img src="images/logo.png" alt="Restaurant Logo">
+      </div>
+      <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reservations">Reservations</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="main">
-    <section class="hero">
-      <div class="hero-content-wrapper">
-        <div class="hero-content">
-          <h1>Experience Freshness!</h1>
-          <p>Welcome to Wrap It Up!, where taste meets health and sustainability.</p>
-          <a href="menu.html" class="button">Explore Our Menu</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="call-to-action">
-      <div class="container">
-        <h2>Ready to Wrap It Up?</h2>
-        <p>Order online for pickup or delivery and enjoy our delicious and healthy wraps!</p>
-        <a href="#" class="button">Order Online</a>
-      </div>
-    </section>
-
-    <section class="about-us">
-      <div class="container">
-        <h2>About Wrap It Up!</h2>
-        <p>We're passionate about creating delicious and satisfying meals that are good for you and kind to the planet. We believe fresh, vibrant ingredients are the key to unlocking incredible flavor, which is why we source the finest seasonal vegetables and pair them with innovative vegan meats.</p>
-      </div>
-    </section>
-
-    <section class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have questions or feedback? We'd love to hear from you!</p>
-        <p>
-          <a href="tel:+1234567890">Phone: (123) 456-7890</a><br>
-          <a href="mailto:info@wrapitup.com">Email: info@wrapitup.com</a>
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+  <section id="home" class="hero">
     <div class="container">
-      <p>&copy; Wrap It Up! <?php echo date("Y"); ?></p>
-      <a href="#">Social Media Links</a>
+      <h1>Welcome to [Restaurant Name]!</h1>
+      <p>Experience delicious food and exceptional service in a warm and inviting atmosphere.</p>
+      <a href="index.html" class="button">Explore Our Menu</a>
     </div>
-  </footer>
+  </section>
 
-</body>
-</html>
+  <section id="about" class="about-us">
+    <div class="container">
+      <h2>Wrap It Up</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at justo rutrum sodales. Donec euismod bibendum laoreet. Phasellus imperdiet magna aliquam libertas auctor, vitae congue magna aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel magna eget nibh dignissim consequat sed sed eu lectus. Aenean eu leo quam. Pellentesque orci neque, venenatis eget tortor nec, ultrices ullamcorper quam. Sed posuere consectetur est at lobortis.</p>
+      <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-categories">
+        <ul>
+          <li><a href="#appetizers">Appetizers</a></li>
+          <li><a href="#entrees">Entrees</a></li>
+          <li><a href="#desserts">Desserts</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+        </ul>
+      </div>
+      <div class="menu-items">
+        <h3 id="appetizers">Appetizers</h3>
+        <ul>
+          <li>Calamari Fritti - $12.99</li>
+          <li>Bruschetta - $8.99</li>
+          <li>Soup of the Day - $6.99</li>
+        </ul>
+        <h3 id="entrees">Entrees</h3>
+        <ul>
+          <li>Lasagna - $18.99</li>
+          <li>Chicken Parmigiana - $16.99</li>
+          <li>New York Strip Steak - $24.99</li>
+        </ul>
+        <h3 id="desserts">Desserts</h3>
+        <ul>
+          <li>Tiramisu - $7.99</li>
+          <li>Chocolate Cake - $8.99</li>
+          <li>Cheesecake - $7.99</li>
+        </ul>
+        <h3 id="drinks">Drinks</h3>
+        <ul>
+          <li>Soft Drinks - $2.99</li>
+          <li>Coffee - $3.49</li>
+          <li>Wine - Starting at $8.99</li>
+        </ul>
+      </ul>

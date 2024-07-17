@@ -1,125 +1,56 @@
+/* Base styles */
+
 body {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #ffaa68; /* Light orange background */
-    color: #663333; /* Dark red text color */
+    padding: 0;
+    background-color: #ffc7a1; /* Light green background */
   }
   
-  /* Header */
   .header {
-    background-color: #ffd998; /* Lighter orange for header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffa434; /* White header background */
     padding: 20px 0;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #663333;
   }
   
   .container {
     max-width: 1024px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    padding: 0 20px;
   }
   
   .logo {
-    flex: 0 0 auto;
+    float: left;
   }
   
   .logo img {
-    width: 100%;
+    width: 150px;
   }
   
-  .navigation {
-    display: flex;
+  nav {
+    float: right;
   }
   
-  .navigation ul {
+  nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
   
-  .navigation li {
+  nav li {
     display: inline-block;
     margin-right: 20px;
   }
   
-  .navigation a {
+  nav a {
     text-decoration: none;
-    color: #663333; /* Dark red text color */
+    color: #333; /* Text color */
     font-weight: bold;
-    padding: 5px 10px;
-    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
   }
   
-  .navigation a:hover {
-    color: #d98b3f; /* Darker orange for hover */
+  nav a:hover {
+    background-color: #ddd;
   }
   
-  /* Hero Section */
-  .hero {
-    position: relative; /* Stack hero content on top of the image */
-  }
+  /* Other styles for buttons, forms, etc. (if needed) */
   
-  .hero-image {
-    width: 100%; /* Full-width hero image */
-  }
-  
-  .hero-content-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center hero content vertically and horizontally */
-    text-align: center; /* Center text alignment */
-    color: #fff; /* White text color */
-    /* Create a new element for the background with the drop shadow */
-    background: #00000087; /* Light black background with 20% opacity */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Large, light drop shadow */
-    padding: 20px;
-  }
-  
-  .hero-content {
-    /* Move the hero content in front of the background with the drop shadow */
-    position: relative;
-    z-index: 1; /* Set a higher z-index to ensure it renders on top */
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem; /* Larger font size for heading */
-    margin-bottom: 10px;
-  }
-  
-  /* Menu Categories */
-  .menu-categories {
-    background-color: #fff; /* Light background for menu categories */
-    padding: 40px 0; /* Top and bottom padding */
-    box-sizing: border-box; /* Enable box-model for content sizing */
-  }
-  
-  .menu-categories h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  
-  .menu-categories ul {
-    display: flex;
-    flex-wrap: wrap; /* Wrap menu categories on smaller screens */
-    justify-content: center; /* Center menu categories horizontally */
-    margin: 0;
-    padding: 0;
-    list-style: none; /* Remove default bullet points */
-  }
-  
-  .menu-categories li {
-    margin: 10px; /* Spacing between menu categories */
-    text-align: center; /* Center category text */
-  }
-  
-  .menu-categories a {
-    color: #663333; /* Dark red text color */
-    text-decoration: none;
-    padding: none;
-}
