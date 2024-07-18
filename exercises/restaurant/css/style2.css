@@ -1,85 +1,85 @@
-/*
-    basic page layout setup
-*/
-* {
-  box-sizing: border-box;
-}
-
+/* General styles */
 body {
-  margin: 0px;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFD476; /* Lightest color from your palette */
 }
 
-/*
-  Navbar setup and configuration
-*/
 #navbar {
-  background: linear-gradient(to bottom, green, #3e6d3e);
+  background-color: #DD8640; /* Medium color from your palette */
+  color: #fff; /* White for text */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0px;
+  padding: 1rem 2rem;
 }
 
-#navbar a {
+#logo img {
+  max-width: 150px; /* Limit logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+  display: flex;
+}
+
+.cta-button {
+  background-color: #fff; /* White for button background */
+  color: #DD8640; /* Medium color from your palette */
   text-decoration: none;
-  color: white;
-  padding: 24px;
-}
-
-#navbar #logo img {
-  width: 150px;
-}
-
-#navbar .cta-buttom {
-  background-color: white;
-  color: green;
-  border-radius: 36px;
-  padding: 16px 24px;
-  font-size: 20px;
+  padding: 10px 15px;
+  border: 1px solid #DD8640; /* Medium color from your palette */
+  border-radius: 5px;
+  margin-left: 10px;
   font-weight: bold;
-  min-width: 150px;
-  text-align: center;
-  margin-right: 24px;
 }
 
-#footer {
-  background: linear-gradient(to bottom, teal, #01482e);
-  color: white;
-  padding: 12px;
+.cta-button:hover {
+  background-color: #f2f2f2; /* Lighter gray for hover */
+  color: #DD8640; /* Medium color from your palette */
 }
 
-#footer a {
-  text-decoration: none;
-  color: white;
-}
-
-#footer-navbar {
-  width: 800px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-#footer-columns-navbar {
-  width: 800px;
-  margin: 0px auto;
-  padding: 48px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#footer-columns-navbar a {
-  display: block;
-  padding: 8px 0px;
-}
-
-/*
-  Layout setup and configuration
-*/
 #layout {
-  width: 800px;
-  margin: 48px auto;
-  font-size: 24px;
+  padding: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #DD8640; /* Medium color from your palette for headers */
+}
+
+.menu-item {
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack buttons on small screens */
+  }
+
+  .cta-button {
+    margin-bottom: 10px; /* Add margin for spacing on small screens */
+  }
+}
+
+/* Footer styles */
+#footer {
+  background-color: #DD8640; /* Medium color from your palette */
+  color: #fff; /* White for text */
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#footer-cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+.cta-button:hover {
+  background-color: #f2f2f2; /* Lighter gray for hover (same as above) */
+  color: #DD8640; /* Medium color from your palette (same as above) */
 }
