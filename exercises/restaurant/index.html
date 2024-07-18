@@ -1,80 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Name</title>
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap It Up</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="images/logo.png" alt="Restaurant Logo">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#reservations">Reservations</a></li>
-        </ul>
-      </nav>
+    <div id="navbar">
+        <a href="#" id="logo">
+            <img src="images/Wrap It Up.png" alt="restaurant logo">
+        </a>
+        <div class="nav-links">
+            <a href="menu.html" class="cta-button">Menu</a>
+            <a href="#about" class="cta-button">About Us</a>
+            <a href="#contact" class="cta-button">Contact</a>
+        </div>
+        <a href="#reservation" class="cta-button">Reserve Now</a>
     </div>
-  </header>
-
-  <section id="home" class="hero">
-    <div class="container">
-      <h1>Welcome to [Restaurant Name]!</h1>
-      <p>Experience delicious food and exceptional service in a warm and inviting atmosphere.</p>
-      <a href="index.html" class="button">Explore Our Menu</a>
+    <div id="layout">
+        <h1>Welcome to Our Restaurant!</h1>
+        <p>
+            Experience the finest dining with a menu crafted to perfection. 
+            Join us for an unforgettable culinary journey.
+        </p>
     </div>
-  </section>
-
-  <section id="about" class="about-us">
-    <div class="container">
-      <h2>Wrap It Up</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at justo rutrum sodales. Donec euismod bibendum laoreet. Phasellus imperdiet magna aliquam libertas auctor, vitae congue magna aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel magna eget nibh dignissim consequat sed sed eu lectus. Aenean eu leo quam. Pellentesque orci neque, venenatis eget tortor nec, ultrices ullamcorper quam. Sed posuere consectetur est at lobortis.</p>
-      <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
+    <div id="footer">
+        <div id="footer-columns-navbar">
+            <div class="footer-column">
+                <a href="menu.html" class="cta-button">Menu</a>
+                <a href="#specials" class="cta-button">Specials</a>
+                <a href="#events" class="cta-button">Events</a>
+                <a href="#blog" class="cta-button">Blog</a>
+                <a href="#careers" class="cta-button">Careers</a>
+            </div>
+            <div class="footer-column">
+                <a href="#about" class="cta-button">About Us</a>
+                <a href="#chefs" class="cta-button">Our Chefs</a>
+                <a href="#history" class="cta-button">Our History</a>
+                <a href="#gallery" class="cta-button">Gallery</a>
+            </div>
+            <div class="footer-column">
+                <a href="#reservation" class="cta-button">Reservation</a>
+                <a href="#contact" class="cta-button">Contact</a>
+                <a href="#location" class="cta-button">Location</a>
+                <a href="#hours" class="cta-button">Hours</a>
+                <a href="#reviews" class="cta-button">Reviews</a>
+            </div>
+            <div class="footer-column">
+                <a href="#faq" class="cta-button">FAQ</a>
+                <a href="#terms" class="cta-button">Terms of Service</a>
+                <a href="#privacy" class="cta-button">Privacy Policy</a>
+                <a href="#sitemap" class="cta-button">Sitemap</a>
+                <a href="#feedback" class="cta-button">Feedback</a>
+            </div>
+        </div>
+        <div id="footer-navbar">
+            <span>&copy; Wrap It Up 2024</span>
+            <a href="https://www.facebook.com" class="cta-button">Facebook</a>
+            <a href="https://x.com" class="cta-button">Twitter</a>
+            <a href="https://www.instagram.com" class="cta-button">Instagram</a>
+            <a href="https://www.linkedin.com" class="cta-button">LinkedIn</a>
+        </div>
     </div>
-  </section>
-
-  <section id="menu" class="menu">
-    <div class="container">
-      <h2>Our Menu</h2>
-      <div class="menu-categories">
-        <ul>
-          <li><a href="#appetizers">Appetizers</a></li>
-          <li><a href="#entrees">Entrees</a></li>
-          <li><a href="#desserts">Desserts</a></li>
-          <li><a href="#drinks">Drinks</a></li>
-        </ul>
-      </div>
-      <div class="menu-items">
-        <h3 id="appetizers">Appetizers</h3>
-        <ul>
-          <li>Calamari Fritti - $12.99</li>
-          <li>Bruschetta - $8.99</li>
-          <li>Soup of the Day - $6.99</li>
-        </ul>
-        <h3 id="entrees">Entrees</h3>
-        <ul>
-          <li>Lasagna - $18.99</li>
-          <li>Chicken Parmigiana - $16.99</li>
-          <li>New York Strip Steak - $24.99</li>
-        </ul>
-        <h3 id="desserts">Desserts</h3>
-        <ul>
-          <li>Tiramisu - $7.99</li>
-          <li>Chocolate Cake - $8.99</li>
-          <li>Cheesecake - $7.99</li>
-        </ul>
-        <h3 id="drinks">Drinks</h3>
-        <ul>
-          <li>Soft Drinks - $2.99</li>
-          <li>Coffee - $3.49</li>
-          <li>Wine - Starting at $8.99</li>
-        </ul>
-      </ul>
+</body>
+</html>

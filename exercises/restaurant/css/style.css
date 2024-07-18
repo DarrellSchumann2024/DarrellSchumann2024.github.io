@@ -1,148 +1,197 @@
-/* Base styles */
+/*
+    basic page layout setup
+*/
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #FFD476; /* Background color for the website */
 }
 
-/* Header */
-header {
-  background-color: #f5f2f0;
-  padding: 20px 0;
+/*
+  Navbar setup and configuration
+*/
+#navbar {
+  background: #DD8640; /* Background color for the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0px;
+  flex-wrap: wrap;
 }
 
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  float: left; /* Align logo to the left */
-}
-
-.logo img {
-  width: 150px; /* Adjust logo size as needed */
-}
-
-nav {
-  float: right; /* Align navigation to the right */
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
+#navbar a {
   text-decoration: none;
-  color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#navbar #logo img {
+  width: 80px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80px; /* Ensure it fits within the navbar height */
+}
+
+#navbar .nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+#navbar .cta-button {
+  background-color: white;
+  color: #DD8640;
+  border-radius: 36px;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
-  padding: 10px 15px;
-}
-
-nav a:hover {
-  background-color: #ddd;
-}
-
-/* Hero Section */
-.hero {
+  min-width: 120px;
   text-align: center;
-  padding: 50px 0;
-  background-image: url("images/hero-background.jpg"); /* Add background image */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar .cta-button:hover {
+  background-color: #FFD476;
+  color: #880000;
+}
+
+/*
+  Header text color
+*/
+h1 {
+  color: #880000;
+}
+
+/*
+  Layout setup and configuration
+*/
+
+#layout {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#layout p {
+  text-align: center;
+}
+
+/* Hero image styling */
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: 250px; /* Updated height and width for banner size */
+  background-image: url('../images/vegan\ burrito\ hero\ template.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
-  color: #fff;
+  margin-top: 20px;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+/*
+  Footer setup and configuration
+*/
+#footer {
+  background: #DD8640; /* Background color for the footer */
+  color: white;
+  padding: 20px 10px;
 }
 
-.hero p {
-  font-size: 1.2em;
-  line-height: 1.5;
-}
-
-.button {
-  background-color: #ff9933; /* Vibrant orange for buttons */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #ff8000; /* Darken button on hover */
-}
-
-/* About Us Section */
-.about-us {
-  padding: 50px 0;
-}
-
-.about-us img {
-  width: 50%;
-  float: right; /* Align image to the right */
-  margin-left: 20px;
-}
-
-/* Menu Section */
-.menu {
-  padding: 50px 0;
-}
-
-.menu-categories {
-  float: left; /* Align menu categories to the left */
-  width: 20%;
-}
-
-.menu-categories ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-categories li {
-  margin-bottom: 10px;
-}
-
-.menu-categories a {
+#footer a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: white;
+}
+
+#footer-navbar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#footer-columns-navbar {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+#footer-columns-navbar a {
   display: block;
-  padding: 10px 15px;
+  padding: 8px 0px;
 }
 
-.menu-categories a:hover {
-  background-color: #ddd;
+.cta-button {
+  background-color: white;
+  color: #DD8640;
+  border-radius: 36px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.menu-items {
-  float: right; /* Align menu items to the right */
-  width: 80%;
+.cta-button:hover {
+  background-color: #FFD476;
+  color: #880000;
 }
 
-.menu-items h3 {
-  margin-bottom: 20px;
+/*
+  Specific footer CTA button text color
+*/
+#footer .cta-button {
+  color: #880000; /* Orange text color for footer CTA buttons */
+  margin: 5px 0; /* Added margin for spacing between buttons */
 }
 
-.menu-items ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#footer .cta-button:hover {
+  background-color: white;
+  color: #DD8640;
 }
 
-.menu-items li {
-  margin-bottom: 10px;
+/*
+  Responsive design
+*/
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar .nav-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #footer-navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #footer-columns-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
