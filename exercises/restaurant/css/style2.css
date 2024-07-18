@@ -15,6 +15,12 @@ body {
   padding: 1rem 2rem;
 }
 
+#navbar #logo img {
+  width: 80px; /* Adjust width as needed 11*/
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80px; /* Ensure it fits within the navbar height */
+}
+
 #logo img {
   max-width: 150px; /* Limit logo size */
   height: auto; /* Maintain aspect ratio */

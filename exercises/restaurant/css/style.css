@@ -15,7 +15,7 @@ body {
   Navbar setup and configuration
 */
 #navbar {
-  background: #DD8640; /* Background color for the navbar */
+  background: #DD8640; /* Background color for the navbar 11*/
   display: flex;
   justify-content: space-between;
   align-items: center;
